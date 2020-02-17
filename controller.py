@@ -126,5 +126,3 @@ class Controller_PID_Velocity(Controller_PID_Point2Point):
         m4 = throttle - y_val - z_val
         M = np.clip([m1,m2,m3,m4],self.MOTOR_LIMITS[0],self.MOTOR_LIMITS[1])
         self.actuate_motors(self.quad_identifier,M)
-
-def me
